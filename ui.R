@@ -116,7 +116,7 @@ shinyUI(fluidPage(
 			br(), br(), br(), br(),br(), br(), br(), br(),
 			h2("Genetic Variables"),
 			hr(),
-			h5("Below you can choose to visualize the geographical distribution of 33 polygenic scores and 100 principal components (PCs) that reflect ancestry differences within the UK. Polygenic scores are available with and without correction for the 100 PCs. See the methods or strong(a("our article", href="https://www.nature.com/nathumbehav/")) for details on how these variables have been computed."),
+			h5("Below you can choose to visualize the geographical distribution of 33 polygenic scores and 100 principal components (PCs) that reflect ancestry differences within the UK. Polygenic scores are available with and without correction for the 100 PCs. See the methods or ", strong(a("our article", href="https://www.nature.com/nathumbehav/")), " for details on how these variables have been computed."),
 			uiOutput("map_variable_button")
 		),
 		column(2, align="right",
@@ -260,7 +260,7 @@ shinyUI(fluidPage(
 			h5("The first law of geography states that everything is related to everything else, but ", strong(a("near things are more
 			related than distant things",  href="https://www.jstor.org/stable/143141?seq=1#page_scan_tab_contents")), ". Humans living near each other are more related and tend to share more
 			DNA sequence than distant human beings, which is reflected in ", strong(a("genome-wide allele frequency
-			differences",  href="https://www.nature.com/articles/nature07331")), " on a global scale as well as on strong(a("finer scales",  href="https://www.nature.com/articles/ejhg201348")). This clustering on ancestry is a result of
+			differences",  href="https://www.nature.com/articles/nature07331")), " on a global scale as well as on ", strong(a("finer scales",  href="https://www.nature.com/articles/ejhg201348")), ". This clustering on ancestry is a result of
 			historic population movements, genetic drift, natural selection, and/or admixture. Here, we examine
 			geographic distributions of ancestry and genome-wide complex trait variation in Great Britain.")
 		)),
