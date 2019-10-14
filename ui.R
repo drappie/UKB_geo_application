@@ -89,7 +89,7 @@ shinyUI(fluidPage(
 			br(), br(), br(), br(),br(), br(), br(), br(),br(), br(), br(), br(),
 			h2("Welcome"),
 			hr(),
-			h5("Here you can explore  the geographical distribution of a wide range of genetic variables derived from the ", strong(a("UK Biobank dataset", href="http://www.ukbiobank.ac.uk")), "(N=320,940 unrelated individuals)."),
+			h5("Here you can explore the geographical distribution of a wide range of genetic variables derived from the ", strong(a("UK Biobank dataset", href="http://www.ukbiobank.ac.uk")), "(N=320,940 unrelated individuals)."),
 			br(),
 			h5("We included over 100 variables for visualization. Feel free to play around with the buttons on the right to customize and export the visualizations. Use the compare tab above to explore the relationship between these genetic variables."),
 			br(), br(), br(),br(), br(), br(), br()
@@ -116,7 +116,7 @@ shinyUI(fluidPage(
 			br(), br(), br(), br(),br(), br(), br(), br(),
 			h2("Genetic Variables"),
 			hr(),
-			h5("Below you can choose to visualize the geographical distribution of 33 polygenic scores and 100 principal components (PCs) that reflect ancestry differences within the UK. Polygenic scores are available with and without correction for the 100 PCs. See the methods or ", strong(a("our article", href="https://www.nature.com/nathumbehav/")), " for details on how these variables have been computed."),
+			h5("Below you can choose to visualize the geographical distribution of 33 polygenic scores and 100 principal components (PCs) that reflect ancestry differences within the UK. Polygenic scores are available with and without correction for the 100 PCs. See the methods or ", strong(a("our article", href="https://www.nature.com/articles/s41562-019-0757-5")), " for details on how these variables have been computed."),
 			uiOutput("map_variable_button")
 		),
 		column(2, align="right",
@@ -328,7 +328,7 @@ shinyUI(fluidPage(
 			anthropomorphic traits, personality dimensions, educational attainment, cardiovascular disease, and
 			type-2 diabetes. In order to examine the geographic clustering of polygenic scores beyond the clustering
 			of ancestry, we created an additional set of polygenic scores that had the first 100 British ancestry-
-			informative PCs regressed out. See Supplementary Table 1 of our ", strong(a("article", href="https://www.nature.com/nathumbehav/")), " for a full list of the polygenic 
+			informative PCs regressed out. See Supplementary Table 1 of our ", strong(a("article", href="https://www.nature.com/articles/s41562-019-0757-5")), " for a full list of the polygenic 
  			scores and their GWASs."),
 			br(),
 		)),
@@ -387,11 +387,11 @@ shinyUI(fluidPage(
 				fileInput("file1", "" , multiple = FALSE)				
 			),
 			column(4,
-				h6("How it should look like:"),
+				h6("What it should look like:"),
 				dataTableOutput('doc_ex1' , width="70%" )
 			),
 			column(4,
-				h6("How it does look like:"),
+				h6("What it does look like:"),
 				uiOutput("error_message"),
 				dataTableOutput('doc_real' , width="70%" )
 			)
