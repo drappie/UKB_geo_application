@@ -31,7 +31,7 @@ shinyUI(fluidPage(
 		helpText(
 			"Version 1.0"
 		)
-	),
+	), 
 	fluidRow( align="center",
 		br(),
 		column(4, offset=4, align="center", radioGroupButtons( "section",label = NULL, choices=c("Methods"=2, "Explore"=1, "Compare"=3, "Load your data"=4), selected=1 )),
